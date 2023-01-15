@@ -13,6 +13,16 @@ const getLargestEven = (arr) => {
   return maxEven;
 }
 
+function getLargestEvenRegular(arr) {
+  let maxEven = -1;
+  arr.forEach((val) => {
+    if (val > maxEven && checkEven(val)) {
+      maxEven = val;
+    }
+  })
+  return maxEven;
+}
+
 module.exports = {
   getLargestEven,
 }
