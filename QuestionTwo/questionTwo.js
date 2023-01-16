@@ -6,7 +6,7 @@ const checkAllDigitsSame = (num) => {
     }
   }
   return true;
-}
+};
 function checkAllDigitsSameRegular(num) {
   const strNum = num.toString();
   for (let i = 1; i < strNum.length; i++) {
@@ -19,4 +19,5 @@ function checkAllDigitsSameRegular(num) {
 
 module.exports = {
   checkAllDigitsSame,
-}
+  checkAllDigitsSameRegular
+};

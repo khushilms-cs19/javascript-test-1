@@ -2,7 +2,7 @@ const concatExceptFirstChar = (strArr) => {
   return strArr.reduce((final, cur) => {
     return final.slice(1) + cur.slice(1);
   });
-}
+};
 
 function concatExceptFirstCharRegular(strArr) {
   return strArr.reduce((final, cur) => {
@@ -12,4 +12,5 @@ function concatExceptFirstCharRegular(strArr) {
 
 module.exports = {
   concatExceptFirstChar,
-}
+  concatExceptFirstCharRegular
+};

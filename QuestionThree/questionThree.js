@@ -1,6 +1,6 @@
 const reverseCapitalization = (str) => {
   const strLen = str.length;
-  let finalChar = "";
+  let finalChar = '';
   for (let i = 0; i < strLen; i++) {
     const char = str.charAt(i);
     if (char.toLowerCase() === char) {
@@ -10,11 +10,11 @@ const reverseCapitalization = (str) => {
     }
   }
   return finalChar;
-}
+};
 
 function reverseCapitalizationRegular(str) {
   const strLen = str.length;
-  let finalChar = "";
+  let finalChar = '';
   for (let i = 0; i < strLen; i++) {
     const char = str.charAt(i);
     if (char.toLowerCase() === char) {
@@ -28,4 +28,5 @@ function reverseCapitalizationRegular(str) {
 
 module.exports = {
   reverseCapitalization,
-}
+  reverseCapitalizationRegular,
+};
