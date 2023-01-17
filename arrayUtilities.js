@@ -27,10 +27,11 @@ const getEvenNumbersAfterTriplingReduce = (numbers) => {
       throw new Error('Invalid Datatype');
     }
   });
-  const tripledNumbers = numbers.map((num) => num * 3);
-  return tripledNumbers.reduce((final = [], curr) => {
-    if (curr % 2 == 0) {
-      final.push(curr);
+  // const tripledNumbers = numbers.map((num) => num * 3);
+  return numbers.reduce((final, curr) => {
+    const tripleNum = curr * 3;
+    if (tripleNum % 2 == 0) {
+      final.push(tripleNum);
     }
     return final;
   }, []);

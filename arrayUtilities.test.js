@@ -1,6 +1,9 @@
 const { doubleNumbers, getEvenNumbersAfterTripling, getEvenNumbersAfterTriplingReduce } = require("./arrayUtilities")
 
 describe("Array Utilities", () => {
+  //
+  //Doubling numbers using map
+  //
   describe("Doubling Numbers", () => {
     it('Should throw error when given a differect datatype', () => {
       expect(() => doubleNumbers("abc")).toThrow("Invalid Datatype");
@@ -10,7 +13,9 @@ describe("Array Utilities", () => {
     })
 
   })
-
+  //
+  //Using map and then filter
+  //
   describe('Tripling numbers and filtering out even numbers', () => {
     it('Should return [6] when given [1,2,3]', () => {
       expect(getEvenNumbersAfterTripling([1, 2, 3])).toEqual([6]);
@@ -22,6 +27,9 @@ describe("Array Utilities", () => {
       expect(() => getEvenNumbersAfterTripling(["abc"])).toThrow('Invalid Datatype');
     })
   })
+  //
+  //Using only reduce
+  //
   describe('Tripling numbers and filtering out even numbers using REDUCE', () => {
     it('Should return [6] when given [1,2,3]', () => {
       expect(getEvenNumbersAfterTriplingReduce([1, 2, 3])).toEqual([6]);
